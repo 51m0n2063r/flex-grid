@@ -1,5 +1,5 @@
 Lien site:
-https://github.com/51m0n2063r/flex-grid.git
+https://51m0n2063r.github.io/flex-grid/
 
 Flex VS CSS Grid : les consignes
 
