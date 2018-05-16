@@ -12,3 +12,39 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#bgrid {
+	text-align: right;	
+}
+#brei {
+	text-align: center;
+}
+#flex {
+	height:300px;
+	width:100%;
+	border-style:solid;
+}
+#grid {
+	height:300px;
+	width:100%;
+	border-style:solid;
+}
+.cube {
+	height:50px;
+	width:50px;
+}
+.cube.one {
+	background-color:black;
+	color:white;
+}
+.cube.two {
+	background-color: red;
+}
+.cube.three {
+	background-color: purple;
+}
+.cube.four {
+	background-color: blue;
+}
+.cube.five {
+	background-color: green;
+}
