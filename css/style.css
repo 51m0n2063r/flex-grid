@@ -19,16 +19,20 @@
 	text-align: center;
 }
 #flex {
+	display:flex;
 	height:300px;
 	width:50%;
 	border-style:solid;
 	justify-content:space-around;
+	flex-direction:row;
 }
 #grid {
+	display:flex;
 	height:300px;
 	width:50%%;
 	border-style:solid;
 	justify-content: space-around;
+	flex-direction:column;
 }
 .cube {
 	height:50px;
