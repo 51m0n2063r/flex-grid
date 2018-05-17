@@ -10,8 +10,13 @@ $('#reini').click(function(){
 	$('#flex').css('display','');
 	$('#grid').css('width','50%');
 	$('#grid').css('border-radius','');
+	$('#helpgrid').css('display','none')
 })
 $('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
 	$('#exgrid').css('display','none');
+})
+$('#helpgrid').dblclick(function(){
+	$('#exgrid').css('display','inline');
+	$('#helpgrid').css('display','none');
 })
