@@ -14,6 +14,12 @@ $('#reini').click(function(){
 $('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
 	$('#exgrid').css('display','none');
+	$('.one').css('grid-row','3');
+	$('.three').css('grid-row','2');
+	$('.four').css('grid-row','1');
+	$('#cb1').css('display','inline');
+	$('#cb3').css('display','inline');
+	$('#cb4').css('display','inline');
 })
 $('#helpgrid').dblclick(function(){
 	$('#exgrid').css('display','inline');
