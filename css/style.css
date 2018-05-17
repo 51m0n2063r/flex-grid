@@ -85,3 +85,6 @@
 	overflow:scroll;
 	border-radius:10px;
 }
+p.cb {
+	display:none;
+}
