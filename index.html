@@ -73,95 +73,98 @@
     <div>
         <div class="row" id="tbuttons">
             <div class="col s4">
-                <button>Flex</button></div>
-                <div class="col s4" id="brei">
-                    <button>Ré-initialisation</button>
-                </div>
-                <div class="col s4" id="bgrid">
-                    <button>Grid</button>
-                </div>
+                <a class="waves-effect waves-light btn red accent-4" id="bflex">Flex</a>
             </div>
-            <div class="row">
-                <div class="col s6" id="flex">
-                    <p class="cube one">1</p>
-                    <p class="cube two">2</p>
-                    <p class="cube three">3</p>
-                    <p class="cube four">4</p>
-                    <p class="cube five">5</p>
-                    <div class="exflex"></div>
-                </div>
-                <div class="col s6" id="exflex">
-                    <pre>
-                        <code>
-                            <span>#flex {</span>
-                            <span>justify-content:center;</span>
-                            <span>}</span>
-                        </code>
-                    </pre>
-                </div>
-                <div class="col s6" id="grid">
-                    <p class="cube one">1</p>
-                    <p class="cube two">2</p>
-                    <p class="cube three">3</p>
-                    <p class="cube four">4</p>
-                    <p class="cube five">5</p>
-                </div>
-                <div class="col s6" id="exgrid">
-                    <pre>
-                        <code>
-                            <span>#flex {</span>
-                            <span>justify-content:center;</span>
-                            <span>}</span>
-                        </code>
-                    </pre>
-                </div>
+            <div class="col s4" id="brei">
+                <a class="waves-effect waves-light btn red accent-4" id="reini">Ré-initialisation</a>
+            </div>
+            <div class="col s4" id="bgrid">
+                <a class="waves-effect waves-light btn red accent-4" id="bugrid">Grid</a>
             </div>
         </div>
-        <div class="parallax-container">
-          <div class="parallax"><img src="img/imgback.jpg"></div>
-      </div>
-
-      <footer class="page-footer #d50000 red accent-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">EXO</h5>
-                    <p class="grey-text text-lighten-4">
-                    	En groupes de trois à quatre personnes, préparez le meilleur support possible pour faire découvrir Flex et CSS Grid, leurs différences et complémentarités.
-
-                        Comment les utiliser?
-                        Avec quels navigateurs?
-                        Comment les comparer?
-
-                    </p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Git-hub créateur</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col s6" id="flex">
+                <p class="cube one">1</p>
+                <p class="cube two">2</p>
+                <p class="cube three">3</p>
+                <p class="cube four">4</p>
+                <p class="cube five">5</p>
+                <div class="exflex"></div>
+            </div>
+            <div class="col s6" id="exflex">
+                <pre>
+                    <code>
+                        <span>#flex {</span>
+                        <span>justify-content:center;</span>
+                        <span>}</span>
+                    </code>
+                </pre>
+            </div>
+            <div class="col s6" id="grid">
+                <p class="cube one">1</p>
+                <p class="cube two">2</p>
+                <p class="cube three">3</p>
+                <p class="cube four">4</p>
+                <p class="cube five">5</p>
+            </div>
+            <div class="col s6" id="exgrid">
+                <p id="grid-row">Grid-row : Modifie la ligne sur laquelle se trouve un element.</p>
+                <p id="grid-column">Grid-column : Modifie la colonne sur laquelle se trouve un element.</p>
+            </div>
+            <div class="col s6" id="helpgrid">
+                <p id="cb1">Le CSS du cube 1 est : grid-row: 1;</p>
+                <p id="cb2"></p>
+                <p id="cb3"></p>
+                <p id="cb4"></p>
+                <p id="cb5"></p>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/imgback.jpg"></div>
+  </div>
+
+  <footer class="page-footer #d50000 red accent-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">EXO</h5>
+                <p class="grey-text text-lighten-4">
+                   En groupes de trois à quatre personnes, préparez le meilleur support possible pour faire découvrir Flex et CSS Grid, leurs différences et complémentarités.
+
+                   Comment les utiliser?
+                   Avec quels navigateurs?
+                   Comment les comparer?
+
+               </p>
+
+
+           </div>
+           <div class="col l3 s12">
+            <h5 class="white-text">Git-hub créateur</h5>
+            <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+                <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
         </div>
-        
-    </footer>
+    </div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    </div>
+</div>
+
+</footer>
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="main.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>

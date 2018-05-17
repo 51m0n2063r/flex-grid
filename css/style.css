@@ -20,7 +20,7 @@
 }
 #flex {
 	display:flex;
-	height:300px;
+	height:400px;
 	width:50%;
 	border-style:solid;
 	justify-content:space-around;
@@ -28,7 +28,7 @@
 }
 #grid {
 	display:grid;
-	height:300px;
+	height:400px;
 	widows: 50%;
 	border-style:solid;
 }
@@ -50,7 +50,7 @@
 .cube.three {
 	background-color: purple;
 	grid-row:1;
-	grid-column:3;
+	grid-column:4;
 }
 .cube.four {
 	background-color: blue;
@@ -63,10 +63,25 @@
 	grid-column:3;
 }
 #exflex { /* Partie explication de flex */
-	height:300px;
+	height:400px;
 	display:none;
+	width:20%;
 }
 #exgrid { /* Partie explication de grid */
-	height:300px;
+	height:400px;
+	width:40%;
 	display:none;
+	border-style:solid;
+	border-color:red;
+	overflow:scroll;
+	border-radius: 10px;
+}
+#helpgrid {
+	height:400px;
+	width:40%;
+	display:none;
+	border-style:solid;
+	border-color:red;
+	overflow:scroll;
+	border-radius:10px;
 }
