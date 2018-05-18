@@ -24,4 +24,8 @@ $('#grid-row').click(function(){
 $('#helpgrid').dblclick(function(){
 	$('#exgrid').css('display','inline');
 	$('#helpgrid').css('display','none');
+	$('#cb1').css('grid-row','1');
+	$('#cb3').css('grid-row','1');
+	$('#cb4').css('grid-row','3');
 })
+
