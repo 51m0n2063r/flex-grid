@@ -25,12 +25,14 @@
 	border-style:solid;
 	justify-content:space-around;
 	flex-direction:row;
+	border-radius: 10px;
 }
 #grid {
 	display:grid;
 	height:400px;
 	widows: 50%;
 	border-style:solid;
+	border-radius: 10px;
 }
 .cube {
 	height:50px;
