@@ -11,7 +11,7 @@ $('#reini').click(function(){
 	$('#cb1').css('grid-row','1');
 	$('#cb3').css('grid-row','1');
 	$('#cb4').css('grid-row','3');
-	$('#css').replaceWith('<link id="css" href="css/styles.css">')
+	//$('#css').replaceWith('<link id="css" href="css/styles.css">')
 })
 $('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
