@@ -79,7 +79,12 @@
         </div>
         <br><br>
     </div>
+   
+<!-- flexgrid box -->   
     <div>
+
+        <!-- buttons of flexgrid box -->
+        <!--
         <div class="row" id="tbuttons">
             <div class="col s4">
                 <a class="waves-effect waves-light btn grey darken-2" id="bflex">Flex</a>
@@ -91,25 +96,82 @@
                 <a class="waves-effect waves-light btn grey darken-2" id="bugrid">Grid</a>
             </div>
         </div>
-            <div class="row">
-            <div class="col s6" id="flex">
-                <p class="cube one">1</p>
-                <p class="cube two">2</p>
-                <p class="cube three">3</p>
-                <p class="cube four">4</p>
-                <p class="cube five">5</p>
-                <div class="exflex"></div>
-            </div>
-            <div class="col s6" id="exflex">
-                <pre>
-                    <code>
-                        <span>#flex {</span>
-                        <span>justify-content:center;</span>
-                        <span>}</span>
-                    </code>
-                </pre>
-            </div>
-            <div class="col s6" id="grid">
+    -->
+    <div class="clickto">Clique ici pour revenir à 50:50</div>
+        <div id="box">
+                <div id="flexbloc">
+                    <h3>Flex</h3>
+                    <div id="bigflex">
+
+                        <div id="flexinteractive">schema
+                            <div id="containeritem">
+                                <div class="item">1</div>
+                                <div class="item">2</div>
+                                <div class="item">3</div>
+                                <div class="item">4</div>
+                                <div class="item">5</div>
+                                <div class="item">6</div>
+                                <div class="item">7</div>
+                                <div class="item">8</div>
+                                <div class="item">9</div>
+                                <div class="item">0</div>
+                            </div>
+                        </div>
+
+                        <div id="flexexplain">explication
+                            <!--<pre id="code0">container { display: <span class="value">flex</span>; }</pre> -->     
+                            <pre class="btncode" id="code1">container { display: flex;
+<span class="property">flex-direction</span>: <span class="value">row</span> }</pre>
+                            <pre class="btncode" id="code2">container { display: flex;
+<span class="property">flex-direction</span> : <span class="value">row-reverse</span>; }</pre> 
+                            <pre class="btncode" id="code3">container { display: flex;
+<span class="property">flex-direction</span> : <span class="value">column</span>; }</pre>
+                            <pre class="btncode" id="code4">container { display: flex;
+<span class="property">flex-direction</span> : <span class="value">column-reverse</span>; }</pre>
+                            <pre class="btncode" id="code5">container { display: flex;
+<span class="property">justify-content</span> : <span class="value">flex-start</span>; }</pre>
+                            <pre class="btncode" id="code6">container { display: flex;
+<span class="property">justify-content</span> : <span class="value">flex-end</span>; }</pre>
+                            <pre class="btncode" id="code7">container { display: flex;
+<span class="property">justify-content</span> : <span class="value">center</span>; }</pre> 
+                            <pre class="btncode" id="code8">container { display: flex;
+<span class="property">justify-content</span> : <span class="value">space-around</span>; }</pre>
+                            <pre class="btncode" id="code9">container { display: flex;
+<span class="property">justify-content</span> : <span class="value">space-between</span>; }</pre>                
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="gridbloc">
+                    <h3>Grid</h3>
+                    <div id="bigrid">
+                            <div id="migrid">
+                                <div class="" id="grid">
+                                    <p class="cube one">1</p>
+                                    <p class="cube two">2</p>
+                                    <p class="cube three">3</p>
+                                    <p class="cube four">4</p>
+                                    <p class="cube five">5</p>
+                                </div>
+                                <div class="" id="exgrid">
+                                    <p id="grid-row">Grid-row : Modifie la ligne sur laquelle se trouve un element.</p>
+                                    <p id="grid-column">Grid-column : Modifie la colonne sur laquelle se trouve un element.</p>
+                                </div>
+                            </div>
+
+                                <div class="" id="helpgrid">
+                                    <p class="cb" id="cb1">Le CSS du cube 1 est désormais : grid-row: 3;</p>
+                                    <p class="cb" id="cb2"></p>  
+                                    <p class="cb" id="cb3">Le CSS du cube 3 est désormais : grid-row : 2</p>
+                                    <p class="cb" id="cb4">Le CSS du cube 4 est désormais : grid-row : 1</p>
+                                    <p class="cb" id="cb5"></p>
+                                </div> 
+                                                           
+                    </div>
+            
+       
+        <!-- grid box -->
+            <!--<div class="col s6" id="grid">
                 <p class="cube one">1</p>
                 <p class="cube two">2</p>
                 <p class="cube three">3</p>
@@ -121,14 +183,15 @@
                 <p id="grid-column">Grid-column : Modifie la colonne sur laquelle se trouve un element.</p>
             </div>
             <div class="col s6" id="helpgrid">
-                <p class="cb" id="cb1">Le CSS du cube 1 est désormais : grid-row: 3;</p><br/>
-                <p class="cb" id="cb2"></p><br/>  
-                <p class="cb" id="cb3">Le CSS du cube 3 est désormais : grid-row : 2</p><br/>
-                <p class="cb" id="cb4">Le CSS du cube 4 est désormais : grid-row : 1</p><br/>
-                <p class="cb" id="cb5"></p><br/>
-            </div>
+                <p class="cb" id="cb1">Le CSS du cube 1 est désormais : grid-row: 3;</p>
+                <p class="cb" id="cb2"></p>  
+                <p class="cb" id="cb3">Le CSS du cube 3 est désormais : grid-row : 2</p>
+                <p class="cb" id="cb4">Le CSS du cube 4 est désormais : grid-row : 1</p>
+                <p class="cb" id="cb5"></p>
+            </div>-->
         </div>
     </div>
+<!--fin flexgrid box-->
 
     <footer class="page-footer #616161 grey darken-2">
         <div class="container">
