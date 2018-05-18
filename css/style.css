@@ -12,3 +12,78 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#bgrid {
+	text-align: right;	
+}
+#brei {
+	text-align: center;
+}
+#flex {
+	display:flex;
+	height:400px;
+	width:50%;
+	border-style:solid;
+	justify-content:space-around;
+	flex-direction:row;
+}
+#grid {
+	display:grid;
+	height:400px;
+	widows: 50%;
+	border-style:solid;
+}
+.cube {
+	height:50px;
+	width:50px;
+}
+.cube.one {
+	background-color:black;
+	color:white;
+	grid-row:1;
+	grid-column: 1;
+}
+.cube.two {
+	background-color: red;
+	grid-row:1;
+	grid-column:2; 
+}
+.cube.three {
+	background-color: purple;
+	grid-row:1;
+	grid-column:4;
+}
+.cube.four {
+	background-color: blue;
+	grid-row:3;
+	grid-column:1;
+}
+.cube.five {
+	background-color: green;
+	grid-row:2;
+	grid-column:3;
+}
+#exflex { /* Partie explication de flex */
+	height:400px;
+	display:none;
+	width:20%;
+}
+#exgrid { /* Partie explication de grid */
+	height:400px;
+	width:40%;
+	display:none;
+	border-style:solid;
+	border-color:red;
+	overflow:scroll;
+	border-radius: 10px;
+}
+#helpgrid {
+	height:400px;
+	width:40%;
+	display:none;
+	border-style:solid;
+	border-color:red;
+	overflow:scroll;
+	border-radius:10px;
+}
+p.cb {
+display:none;
