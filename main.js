@@ -1,8 +1,3 @@
-$('#bugrid').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille.
-	$('#flex').css('display','none');
-	$('#grid').css('width','60%');//Cette ligne permet de donner toute la div en taille a notre espace (a condition d'avoir donné une taille 0 a son opposé avant)
-	$('#exgrid').css('display','inline');//Exemple de ligne qui permettrai de modifier le flex
-})
 $('#reini').click(function(){
 	$('#exgrid').css('display','');
 	$('#flex').css('display','');
@@ -11,7 +6,6 @@ $('#reini').click(function(){
 	$('#cb1').css('grid-row','1');
 	$('#cb3').css('grid-row','1');
 	$('#cb4').css('grid-row','3');
-	//$('#css').replaceWith('<link id="css" href="css/styles.css">')
 })
 $('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
@@ -27,3 +21,32 @@ $('#helpgrid').dblclick(function(){
 	$('#exgrid').css('display','inline');
 	$('#helpgrid').css('display','none');
 })
+// Agrandir Flex en cliquant dessus
+$('#flexbloc').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
+    $('#gridbloc').css('width','0');
+    $('#flexbloc').css('width','100%');
+});
+    
+    
+// Agrandir Griden cliquant dessus
+$('#gridbloc').click(function(){
+    $('#flexbloc').css('width','0');
+    $('#gridbloc').css('width','100%');
+});
+
+
+// Remettre Flex/Grid à 50-50
+$('.clickto').click(function(){
+    $('#flexbloc').css('width','100%');
+    $('#gridbloc').css('width','100%');
+});
+
+// Quand j appuie sur le code....
+ 
+/*$('#code0').click(function(){
+    $('#containeritem').css($('#code0 .attribut').text(),$('#code0 .value').text());
+});*/
+$('.btncode').click(function(){
+    $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
+
+});
