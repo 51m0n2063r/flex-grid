@@ -112,16 +112,16 @@ display:none;
 					text-align: left;
 				}
 				
-	#gridbloc{
+	/*#gridbloc{
 		background-color: rgb(48, 231, 146);
 		width: 100%;
 		height: auto;
 		overflow: auto;
-	}
+	}*/
 
 		#migrid{
 			display: flex;
-			height:500px;
+			height:700px;
 			width: 100%;
 		}	
 			
@@ -143,7 +143,7 @@ display:none;
 				border-radius: 10px;
 			}
 				#helpgrid {
-					height:400px;
+					height:500px;
 					width:40%;
 					display:none;
 					border-style:solid;
@@ -154,7 +154,7 @@ display:none;
 
 
 
-	.clickto{
+	/*.clickto{
 	background-color: rgb(134, 193, 221);
 	height: 50px;
-	}
+	}*/
