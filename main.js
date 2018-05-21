@@ -22,21 +22,21 @@ $('#helpgrid').dblclick(function(){
 	$('#helpgrid').css('display','none');
 })
 // Agrandir Flex en cliquant dessus
-$('#flexbloc').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
+$('#bflex').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
     $('#gridbloc').css('width','0');
     $('#flexbloc').css('width','100%');
 });
     
     
 // Agrandir Griden cliquant dessus
-$('#gridbloc').click(function(){
+$('#bugrid').click(function(){
     $('#flexbloc').css('width','0');
     $('#gridbloc').css('width','100%');
 });
 
 
 // Remettre Flex/Grid à 50-50
-$('.clickto').click(function(){
+$('#reini').click(function(){
     $('#flexbloc').css('width','100%');
     $('#gridbloc').css('width','100%');
 });
