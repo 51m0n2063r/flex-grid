@@ -31,21 +31,24 @@
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br>
-            <h1 class="header center blue-grey-text text-grey darken-4">CSS Grid</h1>
+            <h1 class="header center grey-text text-grey darken-4">CSS Grid</h1>
             <br><br>
             <div class="row">
-                <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+                <div class="col s12"><h3>Informations</h3></div>
                 <div class="col s6">
                     <p>On peut créer une grille avec des pistes à taille fixes en utilisant une unité comme le pixel. Pour les pistes à taille variable on peut utiliser le pourcentage ou la nouvelle unité "fr" créée à cet effet</p>
                     <p>Pour placer les éléments sur la grille, on peut utiliser le numéro ou le nom d'une ligne, ou cibler une zone particulière. La grille contient aussi un algorithme pour placer les éléments qui n'ont pas été placés explicitement.</p>
                     <p>Il peut arriver que l'on place plusieurs éléments dans une même cellule, ou que des zones se chevauchent. La superposition peut être contrôlée à l'aide de la propriété z-index. La grille est une spécification puissante qui peut être combinée avec d'autres modules CSS tels que flexbox. Le point de départ est le conteneur.</p>
+                    <p>Les propriétés "grid-template-columns" et "grid-template-rows" permettent de définir des colonnes et des rangées. Celles-ci définissent les pistes. Une piste est l'espace entre deux lignes d'une grille.</p>
+                    <p>Que l'on crée une grille explicite, ou que l'on définisse la taille des pistes créées implicitement, il peut être utile d'assigner une taille minimum, qui s'agrandit pour s'adapter au contenu. Par exemple on peut souhaiter que les rangées ne soient jamais moins hautes que 100 pixels, mais qu'elles aillent jusqu'à 300 pixels de haut si le contenu le nécessite.</p><p>Une cellule est la plus petite unité sur une grille, conceptuellement similaire à une cellule de tableau. Comme nous l'avons vu lorsqu'une grille est définie sur un élément ses enfants viennent se positionner chacun dans l'une des cellules de la grille.</p><p>Un élément peut s'étendre sur plusieurs cellules d'une rangée ou d'une colonne, et cela crée une zone. Les zones doivent être rectangulaires - on ne peut pas créer de forme en L par exemple.</p>
+                    
                 </div>
                 <div class="col s6"><img class="materialboxed" width="100%" src="img/grid-template-areas.png"><br>
                     <img class="materialboxed" width="100%" src="img/0b108.jpg">
                 </div>
             </div>
             <br>
-            <a class="waves-effect waves-light btn" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout"><i class="material-icons left">cloud</i>Lien vers MDN web docs</a>
+            <a class="waves-effect waves-light btn grey darken-2" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout"><i class="material-icons left">cloud</i>Lien vers MDN web docs</a>
             <br>
             <h2 class="header center grey-text">Compatibilité des navigateurs</h2>
             <img class="materialboxed" width="100%" src="img/cssgrid.png">
