@@ -52,7 +52,7 @@ $('#reini').click(function(){
 /*$('.btncode').click(function(){
     $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
 });*/
-$('.gbtnchoice').click(function(){
+$('.gbtnchoice').click(function(){//Même système de bouton coté grid(un poil plus lisible)
 	$('.one').css($(this).attr('data'),$(this).attr('data-type'))
 })
 

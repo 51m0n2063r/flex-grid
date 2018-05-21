@@ -150,6 +150,11 @@ display:none;
 					overflow:scroll;
 					border-radius:10px;
 				}
+				.gg{
+					grid-template-rows: 100px;
+					background-color:#05FFD6FF;
+					grid-template-columns: 5;
+				}
 
 
 
