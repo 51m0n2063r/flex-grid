@@ -50,12 +50,41 @@ $('.clickto').click(function(){
     $('#gridbloc').css('width','100%');
 });
 
-// Quand j appuie sur le code....
- 
-/*$('#code0').click(function(){
-    $('#containeritem').css($('#code0 .attribut').text(),$('#code0 .value').text());
-});*/
-$('.btncode').click(function(){
+// Quand j appuie sur les boutons....
+
+
+/*$('.btncode').click(function(){
     $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
 
-});
+});*/
+
+$('.btnchoice').click(function(){
+	$('#containeritem').css($(this).parent().children('p').text(), $(this).text());
+})
+
+	// fonction flex-grow
+
+	// Ajout de la class "grow"
+	var btnclicked='';
+
+	$('.btnitemgrow').click(function(){		
+		btnclicked = $(this).text();
+		$('.item[data-number='+btnclicked+']').addClass('grow');
+		$('#flexgros').css('display', 'block');
+		return btnclicked;
+	})
+
+
+
+
+	// Selection de la valeur de flex-grow
+	$('.btngrow').click(function(){
+		$('.grow').css('flex-grow', $(this).text());
+		$('.btngrowchoice[data-case='+btnclicked+']').text($(this).text());
+		$('.item.grow').removeClass('grow');
+		$('#flexgros').css('display', 'none');
+		console.log(btnclicked);
+	})
+
+
+	
