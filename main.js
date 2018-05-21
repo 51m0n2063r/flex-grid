@@ -1,6 +1,5 @@
 $('#reini').click(function(){
 	$('#exgrid').css('display','');
-	$('#flex').css('display','');
 	$('#grid').css('width','50%');
 	$('#helpgrid').css('display','none');
 	$('#cb1').css('grid-row','1');
@@ -26,14 +25,16 @@ $('#helpgrid').dblclick(function(){
 // Agrandir Flex en cliquant dessus
 $('#bflex').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
     $('#gridbloc').css('display','none');
-    $('#flexbloc').css('width','100%');
+	$('#flexbloc').css('width','100%');
+	$('#flexbloc').css('display','');
 });
     
     
 // Agrandir Grid en cliquant dessus
 $('#bugrid').click(function(){
     $('#flexbloc').css('display','none');
-    $('#gridbloc').css('width','100%');
+	$('#gridbloc').css('width','100%');
+	$('#gridbloc').css('display','');
 });
 
 

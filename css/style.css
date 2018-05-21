@@ -93,7 +93,7 @@ display:none;
 					display: flex;
 				}
 					.item{
-						width: 70px;
+						width: 11%;
 						height: auto;
 						background-color: rgb(204, 181, 77);
 						border: 2px solid rgb(112, 117, 36);
