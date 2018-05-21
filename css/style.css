@@ -73,7 +73,6 @@ display:none;
 
 /* flex bloc */
 	#flexbloc{
-		background-color: rgb(230, 150, 113);
 		width: 100%;
 	}
 
@@ -81,22 +80,26 @@ display:none;
 			display: flex;
 		}
 
-			#flexinteractive{
+			/*#flexinteractive{
 				background-color: rgb(134, 124, 124);
 				width: 50%;
-			}
+			}*/
 				#containeritem{
 					width: 100%;
 					height: 500px;
-					background-color: rgb(236, 229, 126);
+					background-image: url(../img/papyrushd.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
 					display: flex;
 				}
 					.item{
 						width: 70px;
 						height: auto;
-						background-color: rgb(224, 149, 224);
-						border: 2px solid rgb(44, 42, 42);
+						background-color: rgb(204, 181, 77);
+						border: 2px solid rgb(112, 117, 36);
 						font-weight: bold;
+						font-size: 2em;
+						color: rgb(65, 58, 58);
 					}
 
 			#flexchoice{
@@ -110,7 +113,7 @@ display:none;
 					display: none;
 				}
 
-				
+/* grid bloc */				
 	#gridbloc{
 		width: 100%;
 	}

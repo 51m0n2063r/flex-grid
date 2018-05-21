@@ -51,7 +51,6 @@ $('#reini').click(function(){
 
 /*$('.btncode').click(function(){
     $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
-
 });*/
 $('.gbtnchoice').click(function(){
 	$('.one').css($(this).attr('data'),$(this).attr('data-type'))
