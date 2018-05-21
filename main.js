@@ -23,14 +23,14 @@ $('#helpgrid').dblclick(function(){
 })
 // Agrandir Flex en cliquant dessus
 $('#flexbloc').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
-    $('#gridbloc').css('width','0');
+    $('#gridbloc').css('display','none');
     $('#flexbloc').css('width','100%');
 });
     
     
-// Agrandir Griden cliquant dessus
+// Agrandir Grid en cliquant dessus
 $('#gridbloc').click(function(){
-    $('#flexbloc').css('width','0');
+    $('#flexbloc').css('display','none');
     $('#gridbloc').css('width','100%');
 });
 
@@ -38,7 +38,10 @@ $('#gridbloc').click(function(){
 // Remettre Flex/Grid à 50-50
 $('.clickto').click(function(){
     $('#flexbloc').css('width','100%');
-    $('#gridbloc').css('width','100%');
+	$('#gridbloc').css('width','100%');
+	$('#flexbloc').css('display','');
+	$('#gridbloc').css('display','');
+
 });
 
 // Quand j appuie sur les boutons....
@@ -64,9 +67,6 @@ $('.btnchoice').click(function(){
 		$('#flexgros').css('display', 'block');
 		return btnclicked;
 	})
-
-
-
 
 	// Selection de la valeur de flex-grow
 	$('.btngrow').click(function(){
