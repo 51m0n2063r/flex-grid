@@ -111,12 +111,9 @@ display:none;
 				}
 
 				
-	/*#gridbloc{
-		background-color: rgb(48, 231, 146);
+	#gridbloc{
 		width: 100%;
-		height: auto;
-		overflow: auto;
-	}*/
+	}
 
 		#migrid{
 			display: flex;
