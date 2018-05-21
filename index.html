@@ -31,9 +31,9 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
-                <h1 class="header center teal-text text-lighten-2">SIMPLA cheat</h1>
-                <h2 class="header center teal-text text-lighten-2">cheat sheet</h2>
-                <h3 class="header center teal-text text-lighten-2">Flex-box  CSS grid</h3>
+                <h1 class="header center blue-grey-text text-grey darken-4">SIMPLA cheat</h1>
+                <h2 class="header center blue-grey-text text-grey darken-4">cheat sheet</h2>
+                <h3 class="header center blue-grey-text text-grey darken-4">Flex-box  CSS grid</h3>
 
                 <div class="row center">
                     <!-- A voir projet -->
@@ -84,7 +84,6 @@
     <div>
 
         <!-- buttons of flexgrid box -->
-        <!--
         <div class="row" id="tbuttons">
             <div class="col s4">
                 <a class="waves-effect waves-light btn grey darken-2" id="bflex">Flex</a>
@@ -96,79 +95,137 @@
                 <a class="waves-effect waves-light btn grey darken-2" id="bugrid">Grid</a>
             </div>
         </div>
-    -->
-    <div class="clickto center-align">Clique ici pour revenir à 50:50</div>
+
+        <!--Partie Flex-->
         <div id="box">
-                <div id="flexbloc col s6 m6 grey darken-3">
-                    <h3>Flex</h3>
+                <div id="flexbloc">
+                    <h3 class="grey darken-3 grey-text text-lighten-2">Flex</h3>
+                    
                     <div id="bigflex">
-
-                        <div id="flexinteractive">schema
-                            <div id="containeritem">
-                                <div class="item">1</div>
-                                <div class="item">2</div>
-                                <div class="item">3</div>
-                                <div class="item">4</div>
-                                <div class="item">5</div>
-                                <div class="item">6</div>
-                                <div class="item">7</div>
-                                <div class="item">8</div>
-                                <div class="item">9</div>
-                                <div class="item">0</div>
-                            </div>
+                    
+                        <div id="containeritem">
+                            <div class="item" data-number="1">1</div>
+                            <div class="item" data-number="2">2</div>
+                            <div class="item" data-number="3">3</div>
+                            <div class="item" data-number="4">4</div>
+                            <div class="item" data-number="5">5</div>
+                            <div class="item" data-number="6">6</div>
+                            <div class="item" data-number="7">7</div>
                         </div>
+                        
 
-                        <div id="flexexplain">explication
-                            <!--<pre id="code0">container { display: <span class="value">flex</span>; }</pre> -->     
-                            <pre class="btncode" id="code1">container { display: flex;
-<span class="property">flex-direction</span>: <span class="value">row</span> }</pre>
-                            <pre class="btncode" id="code2">container { display: flex;
-<span class="property">flex-direction</span> : <span class="value">row-reverse</span>; }</pre> 
-                            <pre class="btncode" id="code3">container { display: flex;
-<span class="property">flex-direction</span> : <span class="value">column</span>; }</pre>
-                            <pre class="btncode" id="code4">container { display: flex;
-<span class="property">flex-direction</span> : <span class="value">column-reverse</span>; }</pre>
-                            <pre class="btncode" id="code5">container { display: flex;
-<span class="property">justify-content</span> : <span class="value">flex-start</span>; }</pre>
-                            <pre class="btncode" id="code6">container { display: flex;
-<span class="property">justify-content</span> : <span class="value">flex-end</span>; }</pre>
-                            <pre class="btncode" id="code7">container { display: flex;
-<span class="property">justify-content</span> : <span class="value">center</span>; }</pre> 
-                            <pre class="btncode" id="code8">container { display: flex;
-<span class="property">justify-content</span> : <span class="value">space-around</span>; }</pre>
-                            <pre class="btncode" id="code9">container { display: flex;
-<span class="property">justify-content</span> : <span class="value">space-between</span>; }</pre>                
+                        <div id="flexchoice">
+                            
+                            <div>
+                                <p>flex-direction</p>
+                                <button class="btnchoice" >row</button>
+                                <button class="btnchoice" >row-reverse</button>
+                                <button class="btnchoice">column</button>
+                                <button class="btnchoice">column-reverse</button>
+                            </div>
+                            
+                            <div>
+                                <p>justify-content</p>
+                                <button class="btnchoice" >flex-start</button>
+                                <button class="btnchoice" >flex-end</button>
+                                <button class="btnchoice">center</button>
+                                <button class="btnchoice">space-around</button>
+                                <button class="btnchoice">space-between</button>
+                            </div>
+
+                            <div>
+                                    <p>align-items</p>
+                                    <button class="btnchoice" >stretch</button>
+                                    <button class="btnchoice" >flex-start</button>
+                                    <button class="btnchoice">flex-end</button>
+                                    <button class="btnchoice">center</button>
+                                    <button class="btnchoice">baseline</button>
+                            </div>
+
+                            <div>
+                                <p>flex-grow</p>
+                                <div> 
+                                    <p> Choisis tes items:</p>
+                                    <button class="btnitemgrow">1</button>
+                                    <button class="btnitemgrow">2</button>
+                                    <button class="btnitemgrow">3</button>
+                                    <button class="btnitemgrow">4</button>
+                                    <button class="btnitemgrow">5</button>
+                                    <button class="btnitemgrow">6</button>
+                                    <button class="btnitemgrow">7</button>
+
+                                    <div>
+                                        <button class="btngrowchoice" data-case="1">0</button>
+                                        <button class="btngrowchoice" data-case="2">0</button>
+                                        <button class="btngrowchoice" data-case="3">0</button>
+                                        <button class="btngrowchoice" data-case="4">0</button>
+                                        <button class="btngrowchoice" data-case="5">0</button>
+                                        <button class="btngrowchoice" data-case="6">0</button>
+                                        <button class="btngrowchoice" data-case="7">0</button>
+                                    </div>
+
+                                    <div id="flexgros">
+                                        <p>Choisis ton flex gros!:</p>
+                                        <button class="btngrow">1</button>
+                                        <button class="btngrow">2</button>
+                                        <button class="btngrow">3</button>
+                                        <button class="btngrow">4</button>
+                                        <button class="btngrow">0</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>flex-wrap</p>
+                                <button class="btnchoice" >no-wrap</button>
+                                <button class="btnchoice" >wrap</button>
+                                <button class="btnchoice">wrap-reverse</button>
+                            </div>
+
+                            <div>
+                                <p>align-content</p>
+                                <button class="btnchoice" >stretch</button>
+                                <button class="btnchoice" >flex-start</button>
+                                <button class="btnchoice">flex-end</button>
+                                <button class="btnchoice">center</button>
+                                <button class="btnchoice">space-around</button>
+                                <button class="btnchoice">space-between</button>
+                            </div>
+
+                            
                         </div>
                     </div>
+                            
                 </div>
-                
-                <div id="gridbloc col s6 m6 grey darken-3">
-                    <h3>Grid</h3>
+        
+        <!--Partie Grid-->
+                <div id="gridbloc">
+                    <h3 class="grey darken-3 grey-text text-lighten-2">Grid</h3>
                     <div id="bigrid">
                             <div id="migrid">
                                 <div class="" id="grid">
-                                    <p class="cube one">1</p>
-                                    <p class="cube two">2</p>
-                                    <p class="cube three">3</p>
-                                    <p class="cube four">4</p>
-                                    <p class="cube five">5</p>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <div class="gg"></div>
+                                    <p class="gitem one">1</p>
+                                    <p class="gitem two">2</p>
+                                    <p class="gitem three">3</p>
+                                    <p class="gitem four">4</p>
+                                    <p class="gitem five">5</p>
                                 </div>
-                                <div class="" id="exgrid">
-                                    <p id="grid-row">Grid-row : Modifie la ligne sur laquelle se trouve un element.</p>
-                                    <p id="grid-column">Grid-column : Modifie la colonne sur laquelle se trouve un element.</p>
+                                <div class="" id="gchoice">
+                                    <button class="gbtnchoice" data="grid-row" data-type="2">Grid-row</button>
+                                    <button class="gbtnchoice" data="grid-column" data-type="4">Grid-column</button>
                                 </div>
-                            </div>
-
-                                <div class="" id="helpgrid">
-                                    <p class="cb" id="cb1">Le CSS du cube 1 est désormais : grid-row: 3;</p>
-                                    <p class="cb" id="cb2"></p>  
-                                    <p class="cb" id="cb3">Le CSS du cube 3 est désormais : grid-row : 2</p>
-                                    <p class="cb" id="cb4">Le CSS du cube 4 est désormais : grid-row : 1</p>
-                                    <p class="cb" id="cb5"></p>
-                                </div> 
-                                                           
+                            </div>                                                           
                     </div>
-            
+           
        
         <!-- grid box -->
             <!--<div class="col s6" id="grid">
@@ -189,7 +246,8 @@
                 <p class="cb" id="cb4">Le CSS du cube 4 est désormais : grid-row : 1</p>
                 <p class="cb" id="cb5"></p>
             </div>-->
-        </div>
+                </div>
+        </div>        
     </div>
 <!--fin flexgrid box-->
 
