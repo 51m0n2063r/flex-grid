@@ -59,32 +59,60 @@
         <div class="row">
             <h2 class="header center">CheatSheet</h2>
             <div class="col s6">
-    <p><b>Display :</b> grid | inline-grid | subgrid</p>
-    <p><b>grid-template-columns :</b> none | line name | track size | auto </p>
-    <p><b>grid-template-rows :</b> none | line name | track size | auto </p>
-    <p><b>grid-template-areas :</b> none | string</p>
-    <p><b>grid-template :</b> racourcis pour utiliser grid-template-columns ou grid-template-rows</p>
-    <p><b>grid :</b> racourcis pour tout</p>
-    Placer les objets :
+                <h5>grid-column-start :</h5>
+                <p>Définit la position de début de la grille sur les colonnes de la grille</p>
 
-    
-    <p><b>grid-row-start</b></p>
-    <p><b>grid-column-start</b></p>
-    <p><b>grid-row-end</b></p>
-    <p><b>grid-column-end</b></p>
-    <p><b>grid-row</b></p>
-    <p><b>grid-column</b></p>
-    <p><b>grid-area</b></p>
-    <p><b>grid-auto-columns</b></p>
-    <p><b>grid-auto-rows</b></p>
-    <p><b>grid-auto-flow</b></p>
-    <p><b>grid-row-gap</b></p>
-    <p><b>grid-column-gap</b></p>
-    
-    <p><b>grid-gap :</b> row-gap pour les espacements des lines | column-gap pour les espacements des colonnes | gap pour les deux</p>
+                <h5>grid-column-end :</h5>
+                <p>Définit la position de fin de la grille sur les colonnes de la grille</p>
+                <p>Elle doit être un nombre entier. Exemple : grid-column-end : 5</p>
+                Au lieu de définir un élément de la grille basé sur les positions de début et de fin des lignes de la grille,
+                vous pouvez le définir en fonction de la largeur de colonne désirée à l'aide du mot clé <b>span</b>. 
+                Gardez à l'esprit que <b>span</b> fonctionne uniquement avec des valeurs positives.
+
+                <h5>grid-column</h5>
+                <p>Permet de combiner grid-column-start &amp; grid-column-end</p>
+                <p><b>Par exemple :</b>grid-column : 2 / 5 définira l'élément de la grille à partir de la 2ème ligne verticale de la grille et se terminera à la 5ème ligne de la grille.</p>
+                <p>Fonctionne aussi avec <b>span</b></p>
+
+                <h5>grid-area</h5>
+                <p>Raccourcis utilisé pour taper à la fois grid-column et grid-row, pour cela il suffit de mettre les quatres valeurs entre des "/" .</p>
+
+                <h5>order</h5>
+                Par défaut, tous les éléments de la grille ont order à 0, mais cela peut être défini sur n'importe quelle valeur positive ou négative, c'est similaire à z-index.
+
+                <h5>template-grid-columns</h5>
+                <p>Définit le dimensionnement et le nom des colonnes de la grille</p>
+                <p>template-grid-columns n'accepte pas seulement les valeurs en pourcentage, mais aussi les unités de longueur comme pixels et ems. Vous pouvez même mélanger différentes unités.</p>
+                
+                <h5>repeat</h5>
+                <p>S'intégre à template-grid-columns ou template-grid-rows et permet de créer des colonnes ou des lignes en fonction en les répétant</p>
+                <p><b>Par exemple :</b> template-grid-columns : repeat (5, 20%). Ici, nous répéterons 5 fois 20% afin de créer 5 colonnes de 20%.</p>
+
+                <h5>grid-template</h5>
+                <p>Raccourcis utilisé pour définir à la fois template-grid-rows &amp; template-grid-columns</p>
+                <p>Le "/" permet de spéparer les deux valeurs</p>
+
     </div>
     <div class="col s6">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus praesentium nobis. Excepturi itaque ut error qui. Esse, nulla quos. Sapiente beatae rerum recusandae iste? Ipsum facere ducimus mollitia tenetur?</p>
+            <h5>grid-row-start</h5>
+            <p>Fonctionne exactement comme les colonnes sauf qu'ici on utilise la valeur row (lignes), qui définit la position de début de la grille sur les lignes de la grille</p>
+
+            <h5>grid-row-end</h5>
+            <p>Définit la position de fin de la grille sur les lignes de la grille</p>
+
+            <h5>grid-row</h5>
+            <p>Permet de combiner grid-row-start &amp; grid-row-end</p>
+            <p><b>Par exemple :</b>grid-row : 3 / 4 définira l'élément de la grille à partir de la 3ème ligne horizontale de la grille et se terminera à la 4ème ligne de la grille.</p>
+            <p>Fonctionne aussi avec <b>span</b></p>
+
+            <h5>template-grid-rows</h5>
+            <p>Définit le dimensionnement et le nom des lignes de la grille</p>
+            <p>template-grid-rows n'accepte pas seulement les valeurs en pourcentage, mais aussi les unités de longueur comme pixels et ems. Vous pouvez même mélanger différentes unités.</p>
+
+            <h5>fr</h5>
+            <p>La grille introduit également une nouvelle unité, le fractionnaire <b>fr</b>.</p>
+            <p>Chaque unité fr alloue une partie de l'espace disponible. Par exemple, si deux éléments sont définies respectivement avec 1fr et 3fr, l'espace est divisé en 4 parts égales, le premier élément occupe 1/4 et le deuxième élément 3/4 de l'espace disponible.</p>
+            <p>Lorsque les colonnes sont définies avec des pixels, des pourcentages ou des ems, toutes les autres colonnes définies avec fr se répartiront l'espace restant.</p>
     </div>
     </div>
     </div>
