@@ -54,9 +54,18 @@ $('#reini').click(function(){
     $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
 });*/
 $('.gbtnchoice').click(function(){//Même système de bouton coté grid(un poil plus lisible)
-	$('.one').css($(this).attr('data'),$(this).attr('data-type'))
+	$('#grid').css($(this).attr('data'),$(this).attr('data-type'))
 })
-
+$('.grow').click(function(){
+	$('.one').css($(this).attr('data'),'3');
+	$('.three').css($(this).attr('data'),'2');
+	$('.nine').css($(this).attr('data'),'1');
+})
+$('.gcolumn').click(function(){
+	$('.one').css($(this).attr('data'),'3');
+	$('.three').css($(this).attr('data'),'2');
+	$('.nine').css($(this).attr('data'),'1');
+})
 $('.btnchoice').click(function(){
 	$('#containeritem').css($(this).parent().children('p').text(), $(this).text());
 })
