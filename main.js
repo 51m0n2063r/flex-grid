@@ -1,11 +1,3 @@
-$('#reini').click(function(){
-	$('#exgrid').css('display','');
-	$('#grid').css('width','50%');
-	$('#helpgrid').css('display','none');
-	$('#cb1').css('grid-row','1');
-	$('#cb3').css('grid-row','1');
-	$('#cb4').css('grid-row','3');
-})
 /*$('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
 	$('#exgrid').css('display','none');
@@ -16,27 +8,18 @@ $('#reini').click(function(){
 	$('#cb3').css('display','inline');
 	$('#cb4').css('display','inline');
 })*/
-$('#helpgrid').dblclick(function(){
-	$('#exgrid').css('display','inline');
-	$('#helpgrid').css('display','none');
-})
-
-
 // Agrandir Flex en cliquant dessus
 $('#bflex').click(function(){//Fonction qui marcherai sur un appui de bouton et etendrai la box au max de sa taille. 
     $('#gridbloc').css('display','none');
 	$('#flexbloc').css('width','100%');
 	$('#flexbloc').css('display','');
-});
-    
-    
+});    
 // Agrandir Grid en cliquant dessus
 $('#bugrid').click(function(){
     $('#flexbloc').css('display','none');
 	$('#gridbloc').css('width','100%');
 	$('#gridbloc').css('display','');
 });
-
 
 // Remettre Flex/Grid à 50-50
 $('#reini').click(function(){
