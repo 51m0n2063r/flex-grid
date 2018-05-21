@@ -6,84 +6,53 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-#bgrid {
-	text-align: right;	
-}
-#brei {
-	text-align: center;
-}
+ .icon-block {
+ 	padding: 0 15px;
+ }
+ .icon-block .material-icons {
+ 	font-size: inherit;
+ }
+ #bgrid {
+ 	text-align: right;	
+ }
+ #brei {
+ 	text-align: center;
+ }
 
-/**/
-.gitem {
-	height:50px;
-	width:50px;
-}
-.gitem.one {
-	background-color:black;
-	color:white;
-	grid-row:1;
-	grid-column: 1;
-}
-.gitem.two {
-	background-color: red;
-	grid-row:1;
-	grid-column:2; 
-}
-.gitem.three {
-	background-color: purple;
-	grid-row:1;
-	grid-column:4;
-}
-.gitem.four {
-	background-color: blue;
-	grid-row:3;
-	grid-column:1;
-}
-.gitem.five {
-	background-color: green;
-	grid-row:2;
-	grid-column:3;
-}
+ /**/
 
+ p.cb {
+ 	display:none;
+ }
 
-p.cb {
-display:none;
-}
+ /* bandeau pour remettre les bloc flex et grid à 50:50 */
+ .clickto{
+ 	background-color: rgb(134, 193, 221);
+ 	height: 50px;
+ }
 
-/* bandeau pour remettre les bloc flex et grid à 50:50 */
-.clickto{
-	background-color: rgb(134, 193, 221);
-	height: 50px;
-	}
+ /* Conteneur de la box flex-grid */
+ #box{
+ 	display: flex;
+ 	justify-content: center;
+ 	text-align: center;
+ 	height: auto;
+ 	overflow: auto;
+ }
 
-/* Conteneur de la box flex-grid */
-#box{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	height: auto;
-	overflow: auto;
-}
+ /* flex bloc */
+ #flexbloc{
+ 	width: 100%;
+ }
 
-/* flex bloc */
-	#flexbloc{
-		width: 100%;
-	}
-
-		#bigflex{
-			display: flex;
-		}
+ #bigflex{
+ 	display: flex;
+ }
 
 			/*#flexinteractive{
 				background-color: rgb(134, 124, 124);
 				width: 50%;
-			}*/
+				}*/
 				#containeritem{
 					width: 100%;
 					height: 500px;
@@ -92,55 +61,56 @@ display:none;
 					background-size: cover;
 					display: flex;
 				}
-					.item{
-						width: 11%;
-						height: auto;
-						background-color: rgb(204, 181, 77);
-						border: 2px solid rgb(112, 117, 36);
-						font-weight: bold;
-						font-size: 2em;
-						color: rgb(65, 58, 58);
-					}
+				.item{
+					width: 11%;
+					height: auto;
+					background-color: rgb(204, 181, 77);
+					border: 2px solid rgb(112, 117, 36);
+					font-weight: bold;
+					font-size: 2em;
+					color: rgb(65, 58, 58);
+				}
 
-			#flexchoice{
-				background-color: rgb(97, 75, 75);
-				width: 40%;
-				height: 500px;  
-				overflow: auto;              
-			}
+				#flexchoice{
+					background-color: rgb(97, 75, 75);
+					width: 40%;
+					height: 500px;  
+					overflow: auto;              
+				}
 
 				#flexgros{
 					display: none;
 				}
 
-/* grid bloc */				
-	#gridbloc{
-		width: 100%;
-	}
+				/* grid bloc */				
+				#gridbloc{
+					width: 100%;
+				}
 
-		#migrid{
-			display: flex;
-			height:550px;
-			width: 100%;
-		}	
-			
-			#grid {
-				display:grid;
-				height:500px;
-				width: 50%;
-				widows: 50%;
-				border-style:solid;
-				border-radius: 10px;
-			}
+				#migrid{
+					display: flex;
+					height:550px;
+					width: 100%;
+				}	
 
-			#gchoice { /* Partie explication de grid */
-				height:500px;
-				width:40%;
-				border-style:solid;
-				border-color:red;
-				overflow:scroll;
-				border-radius: 10px;
-			}
+				#grid {
+					display:grid;
+					height:500px;
+					width: 50%;
+					widows: 50%;
+					border-style:solid;
+					border-radius: 10px;
+					background-color: #05FFD6FF;
+				}
+
+				#gchoice { /* Partie explication de grid */
+					height:500px;
+					width:40%;
+					border-style:solid;
+					border-color:red;
+					border-radius: 10px;
+					background-image: url('../img/papyrushd.jpg')
+				}
 				#helpgrid {
 					height:500px;
 					width:40%;
@@ -151,10 +121,8 @@ display:none;
 					border-radius:10px;
 				}
 				.gg{
-					grid-template-rows: 100px;
-					background-color:#05FFD6FF;
-					grid-template-columns: 5;
-				}
-
-
-
+					display:grid;
+					background-color:#CDFF57FF;
+					border-style:solid;
+					color:rgb(65, 58, 58);
+}
