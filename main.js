@@ -7,7 +7,7 @@ $('#reini').click(function(){
 	$('#cb3').css('grid-row','1');
 	$('#cb4').css('grid-row','3');
 })
-$('#grid-row').click(function(){
+/*$('#grid-row').click(function(){
 	$('#helpgrid').css('display','inline');
 	$('#exgrid').css('display','none');
 	$('.one').css('grid-row','3');
@@ -16,7 +16,7 @@ $('#grid-row').click(function(){
 	$('#cb1').css('display','inline');
 	$('#cb3').css('display','inline');
 	$('#cb4').css('display','inline');
-})
+})*/
 $('#helpgrid').dblclick(function(){
 	$('#exgrid').css('display','inline');
 	$('#helpgrid').css('display','none');
@@ -53,6 +53,9 @@ $('#reini').click(function(){
     $('#containeritem').css($(this).children('span.property').text(), $(this).children('span.value').text());
 
 });*/
+$('.gbtnchoice').click(function(){
+	$('.one').css($(this).attr('data'),$(this).attr('data-type'))
+})
 
 $('.btnchoice').click(function(){
 	$('#containeritem').css($(this).parent().children('p').text(), $(this).text());
