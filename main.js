@@ -49,6 +49,9 @@ $('.gcolumn').click(function(){
 	$('.three').css($(this).attr('data'),'2');
 	$('.nine').css($(this).attr('data'),'1');
 })
+$('.garea').click(function(){
+	$('.one').css($(this).attr('data'),'1/1/3/4')
+})
 $('.btnchoice').click(function(){
 	$('#containeritem').css($(this).parent().children('p').text(), $(this).text());
 })

@@ -108,8 +108,8 @@
 					width:40%;
 					border-style:solid;
 					border-color:red;
-					overflow:scroll;
 					border-radius: 10px;
+					background-image: url('../img/papyrushd.jpg')
 				}
 				#helpgrid {
 					height:500px;
@@ -122,15 +122,7 @@
 				}
 				.gg{
 					display:grid;
-					background-color:#05FFD6FF;
+					background-color:#CDFF57FF;
 					border-style:solid;
-				}
-				.one {
-				
-				}
-				.two {
-
-				}
-				.nine {
-
-				}
+					color:rgb(65, 58, 58);
+}
