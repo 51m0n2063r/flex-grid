@@ -67,23 +67,55 @@
         <div class="row">
             <h2 class="header center">CheatSheet</h2>
             <div class="col s6">
-                <p><b>display :</b> flex ou inline-flex</p>
-                <p><b>flex-direction :</b> row / row-reverse | column / column-reverse</p>
-                <p><b>order :</b> de -1 à 0 ...</p>
-                <p><b>flex-grow :</b> "number" </p>
-                <p><b>flex-wrap :</b> nowrap | wrap / wrap-reverse;</p>
-                <p><b>flex-shrink :</b> "number"; /* 1 par défaut */</p>
-                <p><b>flex-flow :</b> ‘flex-direction’ || ‘flex-wrap’</p>
-                <p><b>flex-basis :</b> "length" | auto; /* default auto */</p>
-                <p><b>justify-content :</b> flex-start | flex-end | center | space-between | space-around | space-evenly;</p>
-                <p><b>flex :</b> none | [ 'flex-grow' 'flex-shrink'|| 'flex-basis' ]</p>
-                <p><b>align-self :</b> auto | flex-start | flex-end | center | baseline | stretch;</p>
-                <p><b>align-items :</b> flex-start | flex-end | center | baseline | stretch;</p>
-                <p><b>align-content :</b> flex-start | flex-end | center | space-between | space-around | stretch;</p>
-                <p></p>
+                <h5>justify-content :</h5>
+                <p>Pour aligner des objets horizontalement.</p>
+
+                <p><b>flex-start :</b> Les éléments s'alignent au côté gauche du conteneur.</p>
+                <p><b>flex-end :</b> Les éléments s'alignent au côté droit du conteneur.</p>
+                <p><b>center :</b> Les éléments s'alignent au centre du conteneur.</p>
+                <p><b>space-between :</b> Les éléments s'affichent avec un espace égal entre eux.</p>
+                <p><b>space-around :</b> Les éléments s'affichent avec un espacement égal à l'entour d'eux.</p>
+
+                <h5>flex-direction :</h5>
+                <p>Définit la direction dans laquelle les éléments sont placés dans le conteneur.</p>
+
+                <p><b>row :</b> Les éléments sont disposés dans la même direction que le texte.</p>
+                <p><b>row-reverse :</b> Les éléments sont disposés dans la direction opposée au texte.</p>
+                <p><b>column :</b> Les éléments sont disposés de haut en bas.</p>
+                <p><b>column-reverse :</b> Les éléments sont disposés de bas en haut.</p>
+
+                <h5>flex-wrap :</h5>
+                <p>Permet de fixer aux objets une même propriété.</p>
+
+                <p><b>nowrap :</b> Tous les éléments sont tenus sur une seule ligne.</p>
+                <p><b>wrap :</b> Les éléments s'enveloppent sur plusieurs lignes au besoin.</p>
+                <p><b>wrap-reverse :</b> Les éléments s'enveloppent sur plusieurs lignes dans l'ordre inversé.</p>
+
             </div>
             <div class="col s6">
-                <p>blab Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores! Rerum ad enim laboriosam odit nisi aliquid. Asperiores voluptatem similique rem distinctio natus dolorum voluptas blanditiis, ab accusantium, dignissimos aperiam!</p>
+                    <h5>align-items :</h5>
+                    <p>Pour aligner les objets verticalement.</p> 
+
+                <p><b>flex-start :</b> Les éléments s'alignent au haut du conteneur.</p>
+                <p><b>flex-end :</b> Les éléments s'alignent au bas du conteneur.</p>
+                <p><b>center :</b> Les éléments s'alignent au centre vertical du conteneur.</p>
+                <p><b>baseline :</b> Les éléments s'alignent à la ligne de base du conteneur.</p>
+                <p><b>stretch :</b> Les éléments sont étirés pour s'adapter au conteneur.</p>
+
+                <h5>align-self :</h5>
+                <p>Utilise les mêmes valeurs que align-items mais pour un seul objet.</p>
+
+                <h5>align-content :</h5> 
+                <p>Détermine l'espace entre les lignes, 
+                    alors que align-items détermine comment les éléments dans leur ensemble sont alignées à l'intérieur du conteneur. 
+                    Notez que align-content n'a aucun effet quand il n'y a qu'une seule ligne.</p> 
+
+                <h5>order :</h5> 
+                <p>Par défaut, les éléments ont une valeur de 0, mais on peut utiliser cette propriété pour changer la valeur à un entier positif ou négatif.</p>
+
+                <h5>flex-flow :</h5>
+                <p>Permet de combiner flex-direction et flex-wrap et d'en faire un raccourcis</p>
+
             </div>
         </div>
     </div>
